@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universal Converter Pro</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/heic2any/dist/heic2any.min.js"></script>
+</head>
+<body>
+
+<div class="bg-grid"></div>
+
+<nav class="top-nav">
+  <div class="nav-brand">🔄All-in-One File Converter</div>
+  
+  <!-- Hamburger menu toggle for mobile -->
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <label for="menu-toggle" class="menu-icon">&#9776;</label>
+  
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">Image</a>
+    <a href="#">About</a>
+    <a href="#">Contact Us</a>
+    <div class="auth-buttons">
+      <a href="#" class="btn-login">Login</a>
+      <a href="#" class="btn-signup">Sign Up</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="badge">⚡ All-in-One File Converter</div>
+
+  <h1>
+    Convert Images Instantly
+  </h1>
+
+  <p>
+    JPG, PNG, WEBP, GIF, TIFF, BMP, HEIC & PDF Converter
+  </p>
+</header>
+<section class="upload-card">
+
+  <div class="format-row">
+
+    <select id="fromFormat">
+      <option>JPG</option>
+      <option>PNG</option>
+      <option>WEBP</option>
+      <option>GIF</option>
+      <option>BMP</option>
+      <option>TIFF</option>
+      <option>HEIC</option>
+    </select>
+
+    <div class="arrow">→</div>
+
+    <select id="toFormat">
+      <option>PNG</option>
+      <option>JPG</option>
+      <option>WEBP</option>
+      <option>PDF</option>
+      <option>GIF</option>
+      <option>BMP</option>
+      <option>TIFF</option>
+    </select>
+
+    </div>
+
+  <div class="drop-zone" id="dropZone">
+    <div class="upload-icon">📁</div>
+
+    <h2>Drop Files Here</h2>
+
+    <p>or click to browse</p>
+
+    <input type="file" id="fileInput" multiple>
+  </div>
+
+  <div id="previewContainer"></div>
+
+  <button id="convertBtn">
+    Convert Files
+  </button>
+
+  <div id="status"></div>
+
+</section>
+
+<section id="features" class="features">
+
+  <div class="feature-card">
+    <h3>⚡ Fast Conversion</h3>
+    <p>All processing happens inside your browser.</p>
+  </div>
+  <div class="feature-card">
+    <h3>🔒 Secure</h3>
+    <p>Your files never leave your device.</p>
+  </div>
+
+  <div class="feature-card">
+    <h3>📦 Batch Support</h3>
+    <p>Convert multiple files together.</p>
+  </div>
+
+</section>
+
+<footer>
+  <div class="footer-logo">All-in-One File Converter”</div>
+
+  <p>
+    Convert JPG, PNG, WEBP, GIF, HEIC & PDF instantly.
+  </p>
+
+  <div class="copy">
+    © 2026 • Created By Ravi Kumar
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
